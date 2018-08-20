@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Hamburgueria Xaxim</h3>
+  <h6 text-color="light">Lanches</h6>
+  <p>
+    A melhor hamburgueria de Curitiba.
+  </p>
+
+  <!--<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>-->
+  <ion-searchbar placeholder=""></ion-searchbar>
+
+  <ion-list>
+    <ion-list-header>
+      Burguers
+    </ion-list-header>
+
+    <ion-item (click)="openDetail()">
+      <h2>Tradicional Burguer</h2>
+      <!--<h3>Don't Know What To Do!</h3>-->
+      <p>Pão de brioche, hambúrguer 200g, queijo, alface e tomate</p>
+      <p ion-text color="danger">R$26,00</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Picanha Burguer</h2>
+      <p>Pão de brioche, hambúrguer de picanha 200g, queijo, bacon, alface e tomate</p>
+      <p ion-text color="danger">R$26,00</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Cheddar</h2>
+      <p>Pão de brioche, hambúrguer 200g, queijo cheddar, cebola caramelizada, alface e tomate</p>
+      <p ion-text color="danger">R$22,00</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Cheddar Bacon</h2>
+      <p>Pão de brioche, hambúrguer 200g, queijo cheddar, bacon, cebola caramelizada, alface e tomate</p>
+      <p ion-text color="danger">R$23,00</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Costela Burguer</h2>
+      <p>Pão de brioche, hambúrguer artesanal de costela bovina, queijo, bacon, alface e tomate</p>
+      <p ion-text color="danger">R$25,90</p>
+    </ion-item>
+
+    <ion-list-header>
+      Bebidas
+    </ion-list-header>    
+
+    <ion-item>
+        <h2>Refrigerante lata</h2>
+        <p>350ml</p>
+        <p ion-text color="danger">R$5,90</p>
+      </ion-item>    
+
+  </ion-list> 
+<!--
+  <button ion-button secondary menuToggle>Toggle Menu</button>-->
+</ion-content>
